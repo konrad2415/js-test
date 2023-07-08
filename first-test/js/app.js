@@ -150,13 +150,15 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
        testFalsy = {};
            testFalsy ? falsyStr.innerHTML+="<br/>Its evaluated as truthy with empty object :"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy with :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
        
-       // setting testFalsy as empty object
-       testFalsy = {};
-           testFalsy ? falsyStr.innerHTML+="<br/>Its evaluated as truthy with empty object :"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy with :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
        
        // Playing with arrays
        testFalsy = [];
        testFalsy == false ? falsyStr.innerHTML+="<br/>Its evaluated as truthy empty array testFalsy==false  :"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy against empty array testFalsy==false empty array:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
+       
+       // setting testFalsy as empty object
+       testFalsy = []; // Empty array is taken as truthy value ![] negation to truthy is a falsy so the conditional wont be exec
+           !testFalsy ? falsyStr.innerHTML+="<br/>Its evaluated as truthy with ![] :"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy with ![]:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
+       
        
        // Compared as null
        testFalsy == null ? falsyStr.innerHTML+="<br/>Its evaluated empty array testFalsy==null."+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy against empty array testFalsy==null.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
@@ -171,4 +173,35 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
        // In this context I personally just test against obj stored value zero
        testFalsy.teamA == 0 ? falsyStr.innerHTML+="<br/>Its evaluated testFalsy.teamA which is zero as truthy comparing against zero ."+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated testFalsy.teamA which is zero as falsy comparing against zero.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
        
-       
+       // 
+       if (testFalsy == "[object Object]") {
+        falsyStr.innerHTML+= "<br/> Ist taken as [object Object]";
+      }
+
+      // Creating a bigger object 
+      testFalsy = { teamA: 0, teamB: 1, teamC: 2 }; 
+      testFalsy.teamA = "Milan";
+      testFalsy.teamB = "Liverpool";
+      testFalsy.teamC = "Manchester United";
+        falsyStr.innerHTML += "<br/>"+testFalsy;
+        falsyStr.innerHTML += "<br/>"+testFalsy.teamA;
+
+    // ----------------------------------------------------------
+    falsyStr.innerHTML += "<br/>---------------------------------------------------------<br/ Using switch/case clause>";
+    // Using switch/case statement 
+    switch(testFalsy.teamC){
+        case "Milan":
+        falsyStr.innerHTML += "<br/>Team C es Milan.";
+        break;
+    
+        case "Liverpool":
+        falsyStr.innerHTML += "<br/>Team C es Liverpool.";
+        break;
+
+        case "Manchester United":
+        falsyStr.innerHTML += "<br/>Team C es Liverpool.";
+        break;
+
+        default:
+            falsyStr.innerHTML += "<br/>Team C no es ninguno de la super leage.";
+    }
