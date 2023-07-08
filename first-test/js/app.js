@@ -138,18 +138,37 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
        
        // Created en Empty variable // Not filled by def its undefined
           let testFalsy;
-            testFalsy?falsyStr.innerHTML="Its evaluated as truthy":falsyStr.innerHTML="Its evaluated as Falsy just created has : "+testFalsy;
+            testFalsy ? falsyStr.innerHTML="Its evaluated as truthy":falsyStr.innerHTML="Its evaluated as Falsy just created has : "+testFalsy;
         
        // setting testFalsy = 0
        testFalsy = 0;
-           testFalsy?falsyStr.innerHTML+="<br/>Its evaluated as truthy with :"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy with :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
+           testFalsy ? falsyStr.innerHTML+="<br/>Its evaluated as truthy with :"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy with :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
        // setting testFalsy as empty array
        testFalsy = [];
-           testFalsy?falsyStr.innerHTML+="<br/>Its evaluated as truthy with empty array []:"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy with :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
+           testFalsy ? falsyStr.innerHTML+="<br/>Its evaluated as truthy with empty array []:"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy with :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
        // setting testFalsy as empty object
        testFalsy = {};
-           testFalsy?falsyStr.innerHTML+="<br/>Its evaluated as truthy with empty object :"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy with :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
+           testFalsy ? falsyStr.innerHTML+="<br/>Its evaluated as truthy with empty object :"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy with :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
        
+       // setting testFalsy as empty object
+       testFalsy = {};
+           testFalsy ? falsyStr.innerHTML+="<br/>Its evaluated as truthy with empty object :"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy with :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
+       
+       // Playing with arrays
+       testFalsy = [];
+       testFalsy == false ? falsyStr.innerHTML+="<br/>Its evaluated as truthy empty array testFalsy==false  :"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy against empty array testFalsy==false empty array:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
+       
+       // Compared as null
+       testFalsy == null ? falsyStr.innerHTML+="<br/>Its evaluated empty array testFalsy==null."+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy against empty array testFalsy==null.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
+       
+       // Copare as true
+       testFalsy == true ? falsyStr.innerHTML+="<br/>Its evaluated empty array testFalsy==true."+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy against empty array testFalsy == true.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
+       
+       // Another test
+       testFalsy = { teamA: 0, teamB: 1 };
+       testFalsy.teamA ? falsyStr.innerHTML+="<br/>Its evaluated testFalsy.teamA which is zero as truthy."+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated testFalsy.teamA obj  which is zero as Falsy.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
 
+       // In this context I personally just test against obj stored value zero
+       testFalsy.teamA == 0 ? falsyStr.innerHTML+="<br/>Its evaluated testFalsy.teamA which is zero as truthy comparing against zero ."+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated testFalsy.teamA which is zero as falsy comparing against zero.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
        
        

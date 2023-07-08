@@ -75,8 +75,8 @@ if ([] == true) // <-- falsy, will NOT run code in if-block
 if (![]) // <-- falsy, will also NOT run code in if-block
 </code>
 
-<h4>Caveat</h4>
-Be aware of the data type when evaluating a value in a Boolean context. If the data type of the value is meant to be a number, the truthy/falsy evalution can result in an unexpected outcome:
+<h4>Notes:</h4>
+Data type evaluation values within Boolean context may be harmful. If the data type of the value is meant to be a number, the truthy/falsy evalution can result in an unexpected outcome:
 
 <code>
 const match = { teamA: 0, teamB: 1 }
@@ -86,10 +86,20 @@ if (match.teamA){
 }
 </code>
 
-An alternative to the use case above is to evaluate the value using typeof:
+Alternatively evaluate by using typeof or just the value
+
 <code>
+// Using the typeof
 const match = { teamA: 0, teamB: 1 }
 if (typeof match.teamA === 'number'){
   console.log('Team A: ' + match.teamA);
 }
+
+if ( match.teamA === 0 ){
+  console.log('Its matched to Team A : ' + match.teamA);
+  }else {
+        console.log('Its not matched to Team A : ' + match.teamA);
+}
+
+
 </code>
