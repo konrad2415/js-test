@@ -143,6 +143,13 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
        // setting testFalsy = 0
        testFalsy = 0;
            testFalsy?falsyStr.innerHTML+="<br/>Its evaluated as truthy with :"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy with :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
+       // setting testFalsy as empty array
+       testFalsy = [];
+           testFalsy?falsyStr.innerHTML+="<br/>Its evaluated as truthy with empty array []:"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy with :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
+       // setting testFalsy as empty object
+       testFalsy = {};
+           testFalsy?falsyStr.innerHTML+="<br/>Its evaluated as truthy with empty object :"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy with :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
+       
 
        
        
