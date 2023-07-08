@@ -134,6 +134,15 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
        svgHandler.innerHTML = svg;
 
        // Using Falsy values, flags control on loops and iterators 
-       let falsyStr = document.getElementById("falsy");
-       let testFalsy;
-       testFalsy?falsyStr.innerHTML="Its evaluated as truthy":falsyStr.innerHTML="Its evaluated as Falsy just created has : "+testFalsy;
+          let falsyStr = document.getElementById("falsy");
+       
+       // Created en Empty variable // Not filled by def its undefined
+          let testFalsy;
+            testFalsy?falsyStr.innerHTML="Its evaluated as truthy":falsyStr.innerHTML="Its evaluated as Falsy just created has : "+testFalsy;
+        
+       // setting testFalsy = 0
+       testFalsy = 0;
+           testFalsy?falsyStr.innerHTML+="<br/>Its evaluated as truthy with :"+testFalsy:falsyStr.innerHTML+="<br/>Its evaluated as Falsy with :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+testFalsy;  
+
+       
+       
