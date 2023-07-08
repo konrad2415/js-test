@@ -31,6 +31,9 @@ let html = "<h3>Using string literals:</h3><ul>";
          x.src="ubuntu.png";
          //alert("Hola");
       }
+    
+
+
 
      let svg =`<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
 <path d="M28,10v5h-5l2.279-2.279C23.752,11.609,21.925,11,20,11c-4.962,0-9,4.038-9,9h-1c0-5.514,4.486-10,10-10
@@ -129,3 +132,6 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
 `;
    let svgHandler = document.getElementById("svg");
        svgHandler.innerHTML = svg;
+
+       // Using Falsy values, flags control on loops and iterators 
+       let falsyStr = document.getElementById("falsy")
