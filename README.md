@@ -43,3 +43,53 @@ const name = 'Lev', time = 'today';
 `Hello ${name}, how are you ${time}?`
 
 <h4>Using String Literals to create variable based UI with innerHTML property on modularize/amd</h4>
+
+<h4>Checking for falsy values on variables</h4>
+<p>It is possible to check for a falsy value in a variable with a simple conditional:</p>
+<code>
+if (!variable) {
+  // When the variable has a falsy value the condition is true.
+}
+General Examples
+var string = ""; // <-- falsy
+
+var filledString = "some string in here"; // <-- truthy
+
+var zero = 0; // <-- falsy
+
+var numberGreaterThanZero // <-- truthy
+
+var emptyArray = []; // <-- truthy, we'll explore more about this next
+
+var emptyObject = {}; // <-- truthy
+</code>
+
+<h4>Fun With Arrays - truthy/falsy values - </h4>
+<code>
+if ([] == false) // <-- truthy, will run code in if-block
+
+if ([]) // <-- truthy, will also run code in if-block
+
+if ([] == true) // <-- falsy, will NOT run code in if-block
+
+if (![]) // <-- falsy, will also NOT run code in if-block
+</code>
+
+<h4>Caveat</h4>
+Be aware of the data type when evaluating a value in a Boolean context. If the data type of the value is meant to be a number, the truthy/falsy evalution can result in an unexpected outcome:
+
+<code>
+const match = { teamA: 0, teamB: 1 }
+if (match.teamA){
+  // The following won't run due to the falsy evaluation
+  console.log('Team A: ' + match.teamA);
+}
+</code>
+
+An alternative to the use case above is to evaluate the value using typeof:
+<code>
+const match = { teamA: 0, teamB: 1 }
+if (typeof match.teamA === 'number'){
+  console.log('Team A: ' + match.teamA);
+}
+</code>
