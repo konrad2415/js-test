@@ -134,4 +134,6 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
        svgHandler.innerHTML = svg;
 
        // Using Falsy values, flags control on loops and iterators 
-       let falsyStr = document.getElementById("falsy")
+       let falsyStr = document.getElementById("falsy");
+       let testFalsy;
+       testFalsy?falsyStr.innerHTML="Its evaluated as truthy":falsyStr.innerHTML="Its evaluated as Falsy just created has : "+testFalsy;
