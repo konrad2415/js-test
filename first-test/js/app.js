@@ -248,3 +248,13 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
         };
         
         console.log(car.carType());
+        
+        // String Methods
+        let str = "Apple, Banana, Kiwi";
+        console.log(str.slice(7,13));
+        console.log(str.slice(15));
+        
+        // Using the replace to build new string from previous
+        let txt = str.replace("Banana","Microsoft");
+            txt = txt.replace("Kiwi","Canonical");
+        console.log(txt);
