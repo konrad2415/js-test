@@ -205,3 +205,18 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
         default:
             falsyStr.innerHTML += "<br/>Team C no es ninguno de la super leage.";
     }
+
+    //--------------------------------------------------------------------
+
+    // Using a function and returning value tricky
+    function myFunction(a,b){ // multiply two numbers and return the obtained value
+        return a*b;
+    }
+     
+    // Calling the function to obtain the resulting value to make something
+     testFalsy = myFunction(2,3);
+     falsyStr.innerHTML += "<br/>Got the function returned :"+testFalsy;
+
+     // Call the function with no argument acts as an object and the variable obtain the function itself
+     testFalsy = myFunction;
+     falsyStr.innerHTML += "<br/>Got the function returned :"+testFalsy;
