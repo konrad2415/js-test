@@ -238,3 +238,13 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
          
          //  by modern ARROW FUNCTION way
          eventHandler.addEventListener("click",()=>eventFunction("Hello","world"),false);
+         
+         // Using Objects
+         const car = {
+            model:500,
+            brand:"Fiat",
+            weight:500,
+            carType: function (){ return this.brand+" "+this.model;}
+        };
+        
+        console.log(car.carType());
