@@ -220,3 +220,21 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
      // Call the function with no argument acts as an object and the variable obtain the function itself
      testFalsy = myFunction;
      falsyStr.innerHTML += "<br/>Got the function returned :"+testFalsy;
+
+     // Add an event listener
+     function eventFunction(a,b){
+        if(a ==undefined || b ==undefined){
+        alert("Function called with no parameters");
+        }else{
+               alert("Function called with:"+a+" "+b);
+             }
+     }
+     let eventHandler = document.getElementById("event");
+         //  Add event binding a function to the object classic forms
+         
+         //  eventHandler.addEventListener(`click`,eventFunction,false); 
+         
+         //  Add event binding a function to the object 
+         
+         //  by modern ARROW FUNCTION way
+         eventHandler.addEventListener("click",()=>eventFunction("Hello","world"),false);
