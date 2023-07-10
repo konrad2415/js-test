@@ -290,3 +290,9 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
               
               text = "Please locate where 'locate' occurs!";
               console.log("Last ocurrence of locate is at: "+text.lastIndexOf("locate"));
+              console.log("Using lastIndexOf() to unexistent element: "+text.lastIndexOf("John"));
+              text = "The rain in SPAIN stays mainly in the plain";
+              console.log("Using match() "+text.match("ain"));
+              
+              // Using the includes to check if a substring is included inside a string
+              console.log("Using includes() to know if the substring is inside it : "+text.includes("rain"));
