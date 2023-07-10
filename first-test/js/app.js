@@ -295,4 +295,14 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
               console.log("Using match() "+text.match("ain"));
               
               // Using the includes to check if a substring is included inside a string
-              console.log("Using includes() to know if the substring is inside it : "+text.includes("rain"));
+              console.log("Using includes() to know if the substring is inside it : "+text.includes("SPA"));
+
+              {
+               let x = 5, y = 10;
+               console.log(`The result is: ${x + y}`);
+               x = 31.1415;
+               console.log("toFixed(6) : "+x.toFixed(6) );
+               console.log("toFixed(2) : "+x.toFixed(2) );
+               console.log("toPresision(1) : "+x.toPrecision(1) );
+              } 
+              
