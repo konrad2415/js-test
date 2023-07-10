@@ -101,5 +101,17 @@ if ( match.teamA === 0 ){
         console.log('Its not matched to Team A : ' + match.teamA);
 }
 
+<br/>----------------------------------------------------------------------------<br/>
+<h3>String methods</h3>
+<ul>
+<li>slice();</li>
+<li>replace();// usimmg regex like /g  -to replace all matches /i -to replace case sensitive matches</li>
+<li>toUpperCase();</li>
+<li>toLowerCase();</li>
+<li>trim(); -trimSatart() - trimEnd()// remove white spaces</li>
+<li>charAt(var); -charCodeAt() // return the char in the var specified position</li>
+<li>split();  // convert into an array </li>
+</ul>
+
 
 </code>
