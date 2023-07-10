@@ -303,6 +303,10 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                x = 31.1415;
                console.log("toFixed(6) : "+x.toFixed(6) );
                console.log("toFixed(2) : "+x.toFixed(2) );
-               console.log("toPresision(1) : "+x.toPrecision(1) );
+               console.log("toPrecision(1) : "+x.toPrecision(1) );
+               console.log(parseInt("10 33")); // return 10
+               console.log("Using parseInt(\"years 10\"):  "+parseInt("years 10"));
+               console.log("Using parseInt(\"10 years\"):  "+parseInt("10 years"));
+
               } 
               
