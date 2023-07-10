@@ -270,3 +270,4 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
             txt = str.replace(/Microsoft/g,"facebook");
               console.log(txt); // Didnt have a change cause /i regex imply to be case sensitive and MICROSOFT as upper case is not present there
               console.log(txt.toUpperCase()); // It uppercases whole text
+              console.log(txt.toLowerCase()); // It lowercase whole text
