@@ -326,7 +326,13 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                  r.shift();
                    console.log(r.join(" - "));
                   r.unshift(7);
-                    console.log(r.join(" - "));   
+                    console.log(r.join(" - "));  
+                // Usig splice() to add new element at 3th index 
+                    r.splice(3,0,"Text");
+                     console.log(r.join(" "));
+                // Using splice to remove elements
+                    r.splice(0,2);
+                     console.log(r.join(" ")+" // It removed the first 2 elements.");
              }
 
 
