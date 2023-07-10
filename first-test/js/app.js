@@ -318,6 +318,17 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                 
                arr.pop(); // remove the last element
                console.log(arr.join(" ")); // same as toString() but espicifying the separator as whitee space
+             
+             {
+               let r = [1,3,2,5,9,2];
+                r.pop();
+                  console.log(r.join(" - "));
+                 r.shift();
+                   console.log(r.join(" - "));
+                  r.unshift(7);
+                    console.log(r.join(" - "));   
+             }
+
 
 
 
