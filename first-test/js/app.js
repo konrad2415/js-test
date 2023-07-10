@@ -260,7 +260,7 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
         let re = "";  // Store regular expressions
         console.log(txt);
             
-            str = "Please visit Microsoft and Microsoft!";
+            str = "     Please visit Microsoft and Microsoft!";
              console.log("Str original string:"+str);
 
             txt = str.replace( /MICROSOFT/i ,"W3school");
@@ -271,3 +271,14 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
               console.log(txt); // Didnt have a change cause /i regex imply to be case sensitive and MICROSOFT as upper case is not present there
               console.log(txt.toUpperCase()); // It uppercases whole text
               console.log(txt.toLowerCase()); // It lowercase whole text
+              console.log(txt=txt.trim()); // It lowercase whole text
+              
+              let text = "  Doing something  ";
+              let padded = text.padStart(text.length+2,"xx").padEnd(text.length+4,"xx");
+              console.log(padded);
+
+              console.log("xx"+text.slice(0,2));
+
+              console.log("Object valueOf(): "+car.valueOf());
+              console.log("String charAt() 2 - "+text.charAt(2));
+              console.log("String charCodeAt() 2 -"+text.charCodeAt(2));
