@@ -307,6 +307,18 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                console.log(parseInt("10 33")); // return 10
                console.log("Using parseInt(\"years 10\"):  "+parseInt("years 10"));
                console.log("Using parseInt(\"10 years\"):  "+parseInt("10 years"));
+               console.log(Number.isInteger(10));
 
               } 
+               arr = ["Google","Facebook","Microsoft","Apple"];
+               console.log("Big tech are "+arr.toString());
+
+               arr.push("IBM");
+               console.log("Big tech are "+arr.toString());
+                
+               arr.pop(); // remove the last element
+               console.log(arr.join(" ")); // same as toString() but espicifying the separator as whitee space
+
+
+
               
