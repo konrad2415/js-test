@@ -282,5 +282,6 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
               console.log("Object valueOf(): "+car.valueOf());
               console.log("String charAt() 2 - "+text.charAt(2));
               console.log("String charCodeAt() 2 -"+text.charCodeAt(2));
-              let newArray = text.split(" ");
-              console.log("Using the split() at 3rth elemento of the retuned array: "+newArray[2]);
+              let newArray = text.split(" ",4);
+              console.log("Using the split(3) at 4rth elemento of the retuned array: "+newArray[3]);
+              console.log("Using the indexOf() :"text.indexOf("something"));
