@@ -354,17 +354,43 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                     
                 // using while to round the arr
                     let i = 0; // Iterator begins at 0
+                    console.log("Using while:");
                       while(i < arr.length){
                           console.log("Array element ["+i+"]:"+arr[i]);
                           i++;
                       }
                 console.log(" ");
                // Using a do-while
-
+               console.log("Using do ... while :")   
                 do{ i--;  // Previous state of the itrator was the length so we start decreasing 
                     console.log(`Array element \[${i}\]:${arr[i]}`);   
                 }while( i > 0 );
+                console.log();
+               // Using for
+               console.log("Using for():") 
+                for(  i = 0; i < arr.length; i++){
+                    console.log(`Array element \[${i}\]:  ${arr[i]}`);
+                }
 
+             // Using a for in loop is used to access to objects
+             const myObj =  { 
+                name : "Konrad",
+                age  : 30,
+                DNI  : 89232352048,
+                phone: 52342321,
+                addr : "#246723, 23 Ave. Betwen Freiheit un Allensburg."
+             };
+             console.log(" ");
+
+             // Accessing only to properties identifiers
+             for(let i  in myObj ){
+               console.log(`Properties:${i}`);
+             }
+             console.log(" ");
+             // Accesing to each element withoud know his index name/id
+             for(let flag in myObj){
+                console.log(`Object[${flag}]: - ${myObj[flag]}`);
+             }
              }
 
 
