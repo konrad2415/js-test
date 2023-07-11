@@ -333,6 +333,19 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                 // Using splice to remove elements
                     r.splice(0,2);
                      console.log(r.join(" ")+" // It removed the first 2 elements.");
+                // Using slice to return a new array without range of elements
+                    let r2 = r.slice(2,3);
+                      console.log(r2.join(" ")+" // It will bring the 2nd element separated from thee rest");
+                    
+                    r2 = r.slice(0,3); // Will bring the 1st to 2nd avoiding the las on the list 
+                        console.log(r2.join(" ")+" // It will bring the 0/1/2 elements from the array");
+                // Using Sort to alpha/numerical 
+                    r2 = [1,3,2,5,9,2];
+                    r2.splice(2,0,"tet");
+                    r2.splice(4,0,"Apple");
+                      console.log(r2.sort().join(" - "));
+                      console.log(r2.reverse().join(" - "));
+                      console.log(r2.sort(function(){return 0.5 - Math.random()}).join(" //--")); //Random Sort
              }
 
 
