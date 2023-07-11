@@ -348,6 +348,21 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                       console.log(r2.sort(function(){return 0.5 - Math.random()}).join(" //--")); //Random Sort
              }
 
+             {
+               // USING LOOPS while
+                let arr = [2,1,4,9,3,6,8,5,7];
+                    
+                // using while to round the arr
+                    let i = 0; // Iterator begins at 0
+                      while(i < arr.length){
+                          console.log("Array element ["+i+"]:"+arr[i]);
+                          i++;
+                      }
+
+
+
+             }
+
 
 
 
