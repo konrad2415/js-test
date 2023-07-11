@@ -358,8 +358,12 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                           console.log("Array element ["+i+"]:"+arr[i]);
                           i++;
                       }
+                console.log(" ");
+               // Using a do-while
 
-
+                do{ i--;  // Previous state of the itrator was the length so we start decreasing 
+                    console.log(`Array element \[${i}\]:${arr[i]}`);   
+                }while( i > 0 );
 
              }
 
