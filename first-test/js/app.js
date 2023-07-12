@@ -406,30 +406,29 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                 }
             }
             console.log("===================================================");
-            // Using the for in to accesing to a compund object 
-            // This is debuging purpouses
-            for(let flag in myObj){
-            console.log(`----- INDEX : ${flag} ----- `)   
-              for(let index in myObj[flag]){
-                console.log(`Typeof ${typeof myObj[flag][index]} - value - ${myObj[flag][index]}`);               
-              }
-            
-              console.log("===================================================");
-              for(let flag in myObj){
-                for(let index in myObj[flag]){
-                  if((typeof myObj[flag][index]) == "object"){ // change the object or indep array to string
-                    console.log(`Index: ${flag +"-"+ index +"  value: "+ myObj[flag][index].join(" ")}`);
-                  }else{
-                        console.log(`Index ${flag+"-"+index+" value: "+myObj[flag][index]}`);
-                       }
+                    // Using the for in to accesing to a compund object 
+                    // This is debuging purpouses
+                    for(let flag in myObj){
+                    console.log(`----- INDEX : ${flag} ----- `)   
+                    for(let index in myObj[flag]){
+                        console.log(`Typeof ${typeof myObj[flag][index]} - value - ${myObj[flag][index]}`);               
+                    }
                     
-                }
-              }
-            }
-
-
-
-             }
+                console.log("===================================================");
+                    for(let flag in myObj){
+                        for(let index in myObj[flag]){
+                        if((typeof myObj[flag][index]) == "object"){ // change the object or indep array to string
+                            console.log(`Index: ${flag +"-"+ index +"  value: "+ myObj[flag][index].join(" ")}`);
+                        }else{
+                                console.log(`Index ${flag+"-"+index+" value: "+myObj[flag][index]}`);
+                            }   
+                        }    
+                    }
+                    }
+                console.log("===================================================");     
+                   
+                    
+         }
 
 
 
