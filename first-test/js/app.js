@@ -463,7 +463,18 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                   
                }
 
-               myObj.splice(2,1);
+               //myObj.splice(2,1);
+               for(let key in myObj){
+                let control = 0;
+                debug?console.log(myObj[key]):null;  // This shows me they are objects inside an object 
+                for(let k2 in myObj[key]){
+                  control = k2;
+                  debug ?console.log(`Parent ${key} current ${k2} value:${myObj[key][k2]}`):null; // shows users onject data collection
+                  if(myObj[key][control] == "luis")myObj.splice(key,1); // Deleting the parent object
+                }
+                
+                
+               }
                console.log("============================================");
                for(let key in myObj){
                 debug?console.log(myObj[key]):null;  // This shows me they are objects inside an object 
