@@ -373,12 +373,12 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                 }
 
              // Using a for in loop is used to access to objects
-             const myObj =  { 
+             let myObj =  {   // Im using let to declare the object to be able to mutate the object structure 
                 name : "Konrad",
                 age  : 30,
                 DNI  : 89232352048,
                 phone: 52342321,
-                addr : "#246723, 23 Ave. Betwen Freiheit un Allensburg."
+                addr : " #246723, 23 Ave. Betwen Freiheit un Allensburg."
              };
              console.log(" ");
 
@@ -391,6 +391,34 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
              for(let flag in myObj){
                 console.log(`Object[${flag}]: - ${myObj[flag]}`);
              }
+          
+            myObj = {
+                "user":{
+                    name : "Konrad",
+                    age  : 30,
+                    DNI  : 89232352048,
+                    phone: 52342321,
+                    addr : "#246723, 23 Ave. Betwen Freiheit und Allensburg."
+                },
+                "preferences":{
+                    web:   "https://www.w3school.com",
+                    music: ["Pop-Rock","Romantic","Valad"]
+                }
+            }
+            console.log("===================================================");
+            // Using the for in to accesing to a compund object 
+            // This is debuging purpouses
+            for(let flag in myObj){
+            console.log(`----- INDEX : ${flag} ----- `)   
+              for(let index in myObj[flag]){
+                console.log(`Typeof ${typeof myObj[flag][index]} - value - ${myObj[flag][index]}`);               
+              }
+            
+              
+            }
+
+
+
              }
 
 
