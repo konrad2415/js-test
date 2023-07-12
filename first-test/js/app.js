@@ -425,12 +425,47 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                         }    
                     }
                     }
-                console.log("===================================================");     
-                   
-                    
-         }
-
-
-
+                console.log("============== Deleting Obj element =================");     
+               
+                // We deleted array elements also we can do the same with 
+                // object elements using splice/delete 
+                myObj = [
+                  {
+                    name:"ana",
+                    lastname:"Gomez",
+                    age  : 30
+                  },
+                  {
+                    name:"juan",
+                    lastname:"Aranda",
+                    age  : 22 
+                  },
+                  {
+                    name:"luis",
+                    lastname:"Rodríguez",
+                    age  : 19
+                  },
+                  {
+                    name:"pedro",
+                    lastname:"García",
+                    age : 23
+                  }
+             ];
+  
+            {
+              let debug = 0; // 1 to enable debuging data
+              // ---------------- For in to show it up the array -----------------------------// 
+              
+               for(let key in myObj){
+                debug?console.log(myObj[key]):null;  // This shows me they are objects inside an object 
+                for(let k2 in myObj[key])
+                debug==0?console.log(`Parent ${key} current ${k2} value:${myObj[key][k2]}`):null; // shows users onject data collection
+                  
+               }
 
               
+             
+            }  
+             
+                    
+         }
