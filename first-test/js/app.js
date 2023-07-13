@@ -482,7 +482,9 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                 debug==0?console.log(`Parent ${key} current ${k2} value:${myObj[key][k2]}`):null; // shows users onject data collection
                   
                }
+               console.log("============================================");
             }  
              
+             // Using arrow functions
                     
          }

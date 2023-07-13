@@ -115,3 +115,12 @@ if ( match.teamA === 0 ){
 
 
 </code>
+
+<h3>Operation delete</h3>
+<p>Delet operation erase a value fromm array or object but it sets the place to empty but let the space unfilled</p>
+
+<code>var arboles = ['peumo', 'fresno', 'roble', 'acacio', 'pino'];
+delete arboles[3];
+if (3 in arboles) {
+    // esta rama del código no se ejecuta
+}</codde>
