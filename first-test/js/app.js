@@ -482,9 +482,28 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                 debug==0?console.log(`Parent ${key} current ${k2} value:${myObj[key][k2]}`):null; // shows users onject data collection
                   
                }
-               console.log("============================================");
+               console.log("=============== Starting arrow functions =============================");
             }  
-             
+             {
+
              // Using arrow functions
-                    
+             
+             
+                  // -- Evolving of block functions to arrow ones
+                  function suma(a, b){
+                    return a+b;
+                  }
+
+                  console.log(suma(2,3));
+                  console.log(`Addition of 2 and 3 : ${suma(2,4)}`);
+                  // -- Previous one can be implemented as anonimous function
+                  // -- which can be referenced by a variable
+                  const mArrow = (a,b)=>{
+                    return a+b;
+                  }
+                 console.log(`This is my arrow function 5+4 : ${mArrow(5,4)}`);
+              
+           
+             }
+
          }
