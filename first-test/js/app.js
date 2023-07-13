@@ -502,7 +502,11 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                     return a+b;
                   }
                  console.log(`This is my arrow function 5+4 : ${mArrow(5,4)}`);
-              
+                 
+                 // This arrow function only makes a return so we can erase the curly baces 
+                 // and let it as follows
+                    const arrow2 = (a,b) => a + b ;
+                    console.log(`This is arrow2 function 5+3 : ${mArrow(5,3)}`);
            
              }
 
