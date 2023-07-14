@@ -526,7 +526,17 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                     // -- Using a setTimeout() to execute dayed arrow function
                     //  setTimeout(function , timeInMilisecs);
                     setTimeout( () => console.log("Hola"),600); // After 600 ms
-           
+                   console.log(" ");
+                   // Next task consist in iterate and operate over the array 
+                   // and create a new one with the "man" sufix on each word
+                    myObj = ["iron","ant","super","spider"];
+                     arr = myObj.map( (key) => key+"man"); // Operating over each element 
+                     
+                     // prints the saved info on the new array as a string separated with new line
+                     console.log(arr.join("\n")); 
+
+
+
              }
 
          }
