@@ -510,8 +510,9 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
 
                     // Iterate over object with a map function
                     
-                    console.log(myObj.map((v)=>{return v.name+" "+v.age }));
-                    console.log(myObj.map((v)=>v.name); // No curly braces and no return 
+                    console.log(myObj.map( (v) => { return v.name+" "+v.age }));
+                    console.log(myObj.map(  (v) => v.name)); // No curly braces and no return 
+                    console.log(myObj.map(  v => v.name )); // No parenthesis no curly and no return keyword
                     myObj = [
                       {name: "Orlando"},
                       {name: "Uriel"},
