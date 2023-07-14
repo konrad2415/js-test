@@ -507,6 +507,20 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                  // and let it as follows
                     const arrow2 = (a,b) => a + b ;
                     console.log(`This is arrow2 function 5+3 : ${mArrow(5,3)}`);
+
+                    // Iterate over object with a map function
+                    
+                    console.log(myObj.map((v)=>{return v.name+" "+v.age }));
+                    console.log(myObj.map((v)=>v.name); // No curly braces and no return 
+                    myObj = [
+                      {name: "Orlando"},
+                      {name: "Uriel"},
+                      {name: "Evans"},
+                      {name: "Cassidy"},
+                      {name: "Erlin"}
+                    ];
+
+                    console.log(myObj.map((v)=>v));
            
              }
 
