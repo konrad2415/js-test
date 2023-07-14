@@ -522,6 +522,10 @@ l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,3
                     ];
 
                     console.log(myObj.map((v)=>v));
+
+                    // -- Using a setTimeout() to execute dayed arrow function
+                    //  setTimeout(function , timeInMilisecs);
+                    setTimeout( () => console.log("Hola"),600); // After 600 ms
            
              }
 
