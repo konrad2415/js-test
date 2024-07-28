@@ -48,4 +48,14 @@ const numbers = [1,2,3,4];
   numbers.forEach(function(number){
     console.log(number);
   });
-  
+
+  // for of and using Template Literals to injecting HTML from js  
+    const elements=['JavaScript','Python','C ++','Java'];
+    let html ="<b>Lista de lenguajes:</b><ul>";
+       
+    for(const element of elements){
+        html += `<li>${element}</li>`;
+      }
+      html += `</ul>`;
+      document.getElementById("main").innerHTML=html; 
+       
