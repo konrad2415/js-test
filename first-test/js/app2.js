@@ -58,4 +58,7 @@ const numbers = [1,2,3,4];
       }
       html += `</ul>`;
       document.getElementById("main").innerHTML=html; 
-       
+  // Anonimous function self executed 
+    (function(){
+        alert("Anonimous function self executed!");
+    })();
