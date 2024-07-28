@@ -44,4 +44,8 @@ const salad = ['tomatoes','pineapple','lettuce'];
    console.log(greetings('Peter'));
 
 // Using the forEach() method with anonimous functions ES6
-
+const numbers = [1,2,3,4];
+  numbers.forEach(function(number){
+    console.log(number);
+  });
+  
