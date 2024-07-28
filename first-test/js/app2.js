@@ -62,3 +62,8 @@ const numbers = [1,2,3,4];
     (function(){
         alert("Anonimous function self executed!");
     })();
+
+  // Event handler with anonimous functions
+     document.getElementById("button").addEventListener('click',function(){
+        alert("You clicked the text as button.");
+     })
