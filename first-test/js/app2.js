@@ -87,4 +87,15 @@ const numbers = [1,2,3,4];
        console.log(`Indice: ${index} - Fruta: ${fruit}  .`);
      });
      (function(){console.log(`Logitud de arrelgo de frutas: ${fruit.length}.`);})();
+     const age = 20;
+     console.log( (age>=18? 'Is adult.':'Is not an adult'));
 }
+
+// verify functions arguments
+   function test(value){
+     value = value || 'DefaultValue - No test function value setted';
+     return value;
+   }
+
+   console.log(test());
+   console.log(test('TestFunctionValued'));
