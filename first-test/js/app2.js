@@ -80,3 +80,11 @@ const numbers = [1,2,3,4];
          });
   
      }
+// Fruits 
+{
+    const fruits = ['pineaple','apple','oraange','banana'];
+     fruits.forEach(function(fruit,index){
+       console.log(`Indice: ${index} - Fruta: ${fruit}  .`);
+     });
+     (function(){console.log(`Logitud de arrelgo de frutas: ${fruit.length}.`);})();
+}
