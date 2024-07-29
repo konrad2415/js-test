@@ -66,4 +66,17 @@ const numbers = [1,2,3,4];
   // Event handler with anonimous functions
      document.getElementById("button").addEventListener('click',function(){
         alert("You clicked the text as button.");
-     })
+     });
+  // Running over object array with forEach() 
+     const people = [
+        {name:"Peter",age:32},
+        {name:"Alice",age:25},
+        {name:"Margaret",age:27}
+     ];
+     {
+        let i=0;
+        people.forEach(function(person){
+            console.log(`${++i} - Person : ${person.name}       age: ${person.age}`);
+         });
+  
+     }
