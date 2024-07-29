@@ -105,7 +105,21 @@ const numbers = [1,2,3,4];
            const increasedElements = testArray.map(function(number){
             return number+2;
            });
-              console.log(`Arreglo modificado increasedArray : ${increasedElements}`);
+              console.log(`Arreglo modificado increasedArray : ${increasedElements}`);// 3,4,5,6,7,8
              
          
+    }
+
+    // -- Using/Understandig the Arrow functions as native
+    {
+        const testArray = [1,2,3,4,5,6];
+    // basic arrow function
+        const increasedArray = testArray.map((num)=>{return num+2;});
+    // As only exec one line we may not require the curly brackets and the return keyword 
+        const increased2 = testArray.map((num)=>num*2);
+    // As only receive one argument we may erase the parenthesis and it will keep working fine as follows
+        const increased3 = testArray.map(num=>num+3);  
+        console.log(`Array modified with map increased3: ${increased3}`);
+
+
     }
