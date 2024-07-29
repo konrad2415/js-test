@@ -99,3 +99,13 @@ const numbers = [1,2,3,4];
 
    console.log(test());
    console.log(test('TestFunctionValued'));
+// -- Using map() method to create new array with changes over the prevoius with callback function
+    {
+        const testArray = [1,2,3,4,5,6];
+           const increasedElements = testArray.map(function(number){
+            return number+2;
+           });
+              console.log(`Arreglo modificado increasedArray : ${increasedElements}`);
+             
+         
+    }
