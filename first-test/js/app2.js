@@ -120,6 +120,10 @@ const numbers = [1,2,3,4];
     // As only receive one argument we may erase the parenthesis and it will keep working fine as follows
         const increased3 = testArray.map(num=>num+3);  
         console.log(`Array modified with map increased3: ${increased3}`);
-
-
+    }
+    {
+        // Using the spread operator and uses cases
+          const array1 = [1,2,3];
+           const array2 = [...array1,4,5,6];
+            console.log(array2); // OUT: [1,2,3,4,5,6]
     }
