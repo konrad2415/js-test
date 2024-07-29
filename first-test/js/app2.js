@@ -126,4 +126,9 @@ const numbers = [1,2,3,4];
           const array1 = [1,2,3];
            const array2 = [...array1,4,5,6];
             console.log(array2); // OUT: [1,2,3,4,5,6]
+       // Using spread ops to combining arrays
+           const array3 = [...array1,...array2]
+       // Using spread to paasing args to functions as separated elements
+             console.log(`El mayor lemento del arreglo es: ${Math.max(...array3)}`);    
+    
     }
